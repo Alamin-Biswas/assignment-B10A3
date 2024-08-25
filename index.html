@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alamin Biswas">
+
+    <!-- Tailwind set up -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy UI Set Up -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/761ce99df2.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind customization setup -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                gray: '#737373',
+                light_green: '#ABEF5F'
+              
+                
+              }
+            }
+          }
+        }
+      </script>
+
+    <title>Assignment 3</title>
+</head>
+<body>
+
+  <header class="bg-[#fff] px-[8%]">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between pt-10 items-center ">
+
+
+      <!-- nav-left -->
+      <div class=" flex-1 flex items-center gap-2 lg:flex-initial">
+        <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-400 p-2 rounded-3xl"></i>
+       <span class="font-bold text-2xl">Rinterio</span>
+      </div>
+
+
+      <!-- Nav-middle -->
+      <div class="hidden lg:block">
+        <ul class="flex space-x-5 text-gray">
+          <li class="font-bold text-black">Home</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Blogs</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+
+      <!-- Nav-right -->
+      <div class="space-x-5 hidden sm:block">
+        <i class="fa-solid fa-magnifying-glass p-2 border border-gray-300 rounded-full"></i>
+        <i class="fa-solid fa-cart-shopping p-2 border rounded-full"></i>
+        <button class="bg-lime-400 px-4 py-2 rounded-full font-bold">Book Consult 
+          <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 p-2 rounded-full"></i>
+        </button>
+      </div>
+
+      <!-- Hamburger menu -->
+       <div class="lg:hidden justify-end pl-5">
+        <i class="fa-solid fa-bars"></i>
+       </div>
+    </nav>  
+
+    <!-- Banner -->
+    <section class="grid place-items-center">
+
+      <!-- image -->
+       <div class="w-auto">
+        <img src="assets/banner.png" alt="">
+       </div>
+
+       <!-- Heading and Others-->
+        <div class="grid place-items-center gap-10">
+          <h1 class="text-center font-extrabold text-4xl md:text-6xl md:px-[5%] lg:[10%]">A barn house of this design has a striking appearance</h1>
+          <p class=" text-gray px-[10%] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <button class="bg-[#d5f7af] bg-opacity-60 px-5 py-2 rounded-full ">
+            View Details 
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-400 p-2 rounded-3xl"></i>
+          </button>
+        </div>
+    </section>
+
+  </header>
+
+
+  <main class="max-w-[1440px] mx-auto px-[8%] bg-[#f4f4f4]">
+
+
+    <!-- About Us Section -->
+     <section class="flex py-20 gap-[5%] mt-10 flex-col lg:flex-row">
+      <!-- left-side -->
+      <div>
+        <!-- Header -->
+        <div class="space-y-5 pb-6 relative grid place-items-center lg:block">
+          <img class="absolute -ml-16 -mt-9 hidden lg:block" src="assets/Vector.png" alt="">
+          <button class="bg-white p-2 mt-1 rounded-full">
+            <i class="fa-solid fa-arrow-right"></i>
+            About us
+          </button>
+          <h1 class="font-extrabold text-3xl text-center lg:text-start">We design thoughtful, liveable spaces</h1>
+          <p class="px-16 text-center lg:text-left lg:p-0">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+  
+          <!-- cards -->
+           <div class="md:flex gap-[5%] lg:flex-col">
+            <!-- Card 1 -->
+            <div class="flex bg-white py-3 px-5 rounded-lg gap-4 mt-7">
+              <img class="w-[25%] sm:w-[10%] h-[40%]" src="assets/commercial.png">
+              <div class="space-y-3">
+                <h2 class="font-bold text-2xl">Commercial</h2>
+                <p class="text-gray">We are fully responsible to provide you the best services with modest behavior and trouble free services</p>
+              </div>
+             </div>
+
+  
+           <!-- Card 2 -->
+           <div class="flex bg-white py-3 px-5 rounded-lg gap-4 mt-7">
+            <img class="w-[25%] sm:w-[10%] h-[40%]" src="assets/residential.png" alt="">
+            <div class="space-y-3">
+              <h2 class="font-bold text-2xl">Residential</h2>
+              <p class="text-gray">We serve also to the residential area with all responsibility with Your plan and our service</p>
+            </div>
+           </div>
+           </div>
+      </div>
+
+      <!-- Right-image -->
+       <div class="mx-auto pt-16">
+        <img class="h-full w-screen lg:w-full" src="assets/Rectangle.png" alt="">
+       </div>
+     </section>
+       
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
