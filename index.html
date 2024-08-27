@@ -44,12 +44,12 @@
   
 
 
-  <main class="max-w-[1440px] mx-auto px-[5%] md:px-[8%] bg-[#f4f4f4]">
+  <main class="max-w-[1440px] mx-auto">
 
-    <header class="bg-[#fff]">
+    <header class="bg-[#fff]" px-[5%] md:px-[8%]>
 
       <!-- Navbar -->
-      <nav class="flex justify-between items-center ">
+      <nav class="flex justify-between items-center px-[5%] md:px-[8%] ">
   
   
         <!-- nav-left -->
@@ -109,7 +109,7 @@
 
 
     <!-- About Us Section -->
-     <section class="flex py-20 gap-[5%] mt-10 flex-col lg:flex-row">
+     <section class="flex py-20 gap-[5%] mt-10 flex-col lg:flex-row bg-[#f4f4f4] px-[5%] md:px-[8%]">
       <!-- left-side -->
       <div>
         <!-- Header -->
@@ -154,9 +154,11 @@
      </section>
 
 
-     <!-- Stat Section -->
-      <section class="grid lg:grid-cols-4 md:grid-cols-2  bg-white rounded-lg py-4">
-        <!-- Stat 1 -->
+     <!-- Stat Section --> 
+      <section class="bg-[#f4f4f4] px-[5%] md:px-[8%]">
+        <!-- Stat parents -->
+         <div class=" bg-white grid lg:grid-cols-4 md:grid-cols-2  rounded-lg py-4">
+          <!-- Stat 1 -->
         <div class="stat place-items-center  md:mb-20 lg:mb-0">
           <div class="text-2xl"><i class="fa-solid fa-message"></i></div>
           <div class="stat-value">235+</div>
@@ -183,10 +185,11 @@
           <div class="stat-value">307+</div>
           <div class="stat-desc">Our honorable Staff Members </div>
         </div>
+         </div>
       </section>
 
       <!-- Work Process Section -->
-       <section class="mt-24">
+       <section class="pt-24 px-[5%] md:px-[8%] bg-[#f4f4f4] pb-14">
         <!-- Title div -->
         <div class="space-y-4">
         <!-- button -->
@@ -238,7 +241,7 @@
 
 
        <!-- Our Latest Portfolio Section -->
-       <section class="bg-white">
+       <section class="bg-white px-[5%] md:px-[8%]">
 
         <!-- Section Heading -->
          <div>
@@ -339,7 +342,7 @@
        
 
        <!-- Article and News Section -->
-       <section class="mt-20">
+       <section class="mt-20 px-[5%] md:px-[8%] bg-[#f4f4f4] py-20">
         <!-- Section Heading div -->
         <div>
           <div class="space-y-4">
@@ -450,7 +453,7 @@
        </section>
 
        <!-- Form section -->
-       <section class="space-y-5">
+       <section style="background-image: url(./assets/bg.jpg);"  class="space-y-5 px-[5%] md:px-[8%] bg-cover py-14 mt-4">
         <!-- Section Heading Div -->
         <div class="mt-10">
           <div class="space-y-4">
@@ -485,11 +488,48 @@
          <div>
           <input type="text" placeholder="Write your Massage Here" class="input input-bordered w-full  rounded-2xl h-40 border-none" required/>
          </div>
+
+         <div class="bg-lime-500 rounded-lg text-center">
+          <button class=" bg-opacity-60 px-5 py-2 rounded-full text-center">
+            Send Mail
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-3xl"></i>
+          </button>
+         </div>
+         <div>
+
+         </div>
           
        </section>
-    </main>
-    <footer>
 
-    </footer>
+       <footer class="bg-black py-5 text-white grid gap-9 place-items-center">
+
+        <div>
+          <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-400 p-2 rounded-3xl"></i>
+         <span class="font-bold text-2xl">Rinterio</span>
+        </div>
+        <p class=" w-3/4 md:w-2/4 text-center text-gray">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+          <ul class="flex gap-3 sm:gap-6 md:10 lg:gap-20 text-gray">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Blogs</li>
+            <li>Contact Us</li>
+          </ul>
+  
+          <div class="space-x-7">
+            <button class="bg-lime-400 px-3 py-2 text-black rounded-full font-bold">Book Consult 
+              <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 p-2 rounded-full"></i>
+            </button>
+          </div>
+  
+      </footer>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    
 </body>
 </html>
